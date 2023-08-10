@@ -60,7 +60,7 @@ contract Donate {
     function trackTokensReceived() public {}
 
     // Withdraw tokens
-    function withdrawTokens() public {}
+    function withdrawTokens() private {}
 
     // Get all received tokens
     function receivedTokens() public {}

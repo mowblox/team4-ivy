@@ -3,13 +3,16 @@ ABSA x MEST x Mowblox - 3 Day Blockchain Dev Training Workshop
 
 Donation APP Project 
 
-Brief : A simple Solidity smart contract for a donor application, allowing users to contribute to a fund, track the amount gathered, and obtain a donor link.
+# Brief
+A simple Solidity smart contract for a donor application, allowing users to contribute to a fund, track the amount gathered, and obtain a donor link.
 
-Project Objectives
-Learn Solidity Low-level functionality
-Unit testing
-Event Triggers : New Donation, Fund Completion Percentage milestones; 10% goal, 25% goal, 50%, 75% & 100% completion. 
-Connect Smart Contract to Front End
+# Project Objectives
+- Learn Solidity Low-level functionality
+- Unit testing
+- Event Triggers
+   - New Donation
+   - Fund Completion Percentage milestones; 10% goal, 25% goal, 50%, 75% & 100% completion. 
+- Connect Smart Contract to Front End
 
 # Learning Goals:
 - Event triggers
