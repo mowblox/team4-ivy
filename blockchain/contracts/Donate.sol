@@ -4,6 +4,7 @@ pragma solidity 0.8.19;
 contract Donate {
     // create organization
     address public owner;
+    event DonationMade(address donor, uint amount);
     
     struct Organization {
         address creator;
@@ -15,6 +16,10 @@ contract Donate {
     }
 
     Organization[] public organizations;
+
+    constructor() {
+        owner = msg.sender;
+    }
 
     function createOrganization(string memory _name, string memory _about, uint _goalAmount) public {
         Organization memory newOrganization = Organization({
@@ -47,7 +52,17 @@ contract Donate {
     }
 
     // Send tokens
-    function makeDonation(uint amount, address add) public {}
+    function makeDonation(uint organizationIndex) public payable {
+        require(msg.value > 0, "Donation amount must be greater than 0");
+        require(organizationIndex < organizations.length, "Invalid organization index");
+        
+        Organization storage org = organizations[organizationIndex];
+        require(org.currentAmount + msg.value <= org.goalAmount, "Donation exceeds goal amount");
+
+        org.currentAmount += msg.value;
+        emit DonationMade(msg.sender, msg.value);
+    
+}
 
     // Track tokens received
     function trackTokensReceived() public {}
