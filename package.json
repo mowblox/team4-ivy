@@ -1,0 +1,26 @@
+{
+  "name": "team4-ivy",
+  "version": "1.0.0",
+  "description": "Donations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowblox/team4-ivy.git"
+  },
+  "keywords": [
+    "donor",
+    "solidity"
+  ],
+  "author": "ivy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mowblox/team4-ivy/issues"
+  },
+  "homepage": "https://github.com/mowblox/team4-ivy#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0"
+  }
+}
