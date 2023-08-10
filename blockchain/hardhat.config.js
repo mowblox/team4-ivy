@@ -1,12 +1,10 @@
+const HardhatUserConfig = require('hardhat/config');
 require("@nomicfoundation/hardhat-toolbox");
-
-import HardhatUserConfig from 'hardhat/config';
-import "@nomicfoundation/hardhat-toolbox";
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 
 dotenv.config();
 
-const HardhatUserConfig = {
+const config = {
   solidity: "0.8.19",
   networks: {
     mumbai: {
@@ -16,4 +14,4 @@ const HardhatUserConfig = {
   }
 };
 
-export default config;
+module.exports = config;
