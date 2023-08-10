@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mowblox/team4-ivy#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0"
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
   }
 }
