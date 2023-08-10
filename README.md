@@ -7,10 +7,12 @@ Donation APP Project
 A simple Solidity smart contract for a donor application, allowing users to contribute to a fund, track the amount gathered, and obtain a donor link.
 
 # Project Objectives
-Learn Solidity Low-level functionality
-Unit testing
-Event Triggers : New Donation, Fund Completion Percentage milestones; 10% goal, 25% goal, 50%, 75% & 100% completion. 
-Connect Smart Contract to Front End
+- Learn Solidity Low-level functionality
+- Unit testing
+- Event Triggers
+   - New Donation
+   - Fund Completion Percentage milestones; 10% goal, 25% goal, 50%, 75% & 100% completion. 
+- Connect Smart Contract to Front End
 
 # Learning Goals:
 - Event triggers
