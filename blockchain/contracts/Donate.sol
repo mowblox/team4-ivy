@@ -4,13 +4,6 @@ pragma solidity 0.8.19;
 contract Donate {
     // create organization
     address public owner;
-    uint public targetAmount;
-    uint public currentAmount;
-
-    constructor(uint _targetAmount) {
-        owner = msg.sender;
-        targetAmount = _targetAmount;
-    }
     
     struct Organization {
         address creator;
