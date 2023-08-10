@@ -11,25 +11,32 @@ Unit testing
 Event Triggers : New Donation, Fund Completion Percentage milestones; 10% goal, 25% goal, 50%, 75% & 100% completion. 
 Connect Smart Contract to Front End
 
-Languages
-Solidity, Typescipt, 
+# Learning Goals:
+- Event triggers
+- Understand low-level solidity functionality
+- Unit testing
+- Connect smart contract to a front-end
 
-Team members
+# Features:
+- Send tokens
+- Track tokens sent
+- Track tokens received
+- Withdraw tokens
+- Track token withdrawals
 
-Sahabia
-Subomi Busari
-Justice E. Prince
-Ephraim Mensah
+# Front-end:
+- Landing page
+- Sign up/login
+- View organizations
+- View single organization
+- See list of donors/donations
+- See list of withdrawals (if you’re a donor)
 
 
-# Contract Initialization
-- Set up class for funds
-- Create variables
+# Team members
+- Sahabia
+- Subomi Busari
+- Justice E. Prince
+- Ephraim Mensah
 
-# Donate
-- Users should be able to donate
-- Amount donoated will be added to amount gathered
-- Users should be able to add messages after they have donated
 
-# Get and Send Donor Link
-- Users should be able to send donor link
