@@ -5,6 +5,7 @@ contract Donate {
     // create organization
     address public owner;
     event DonationMade(address donor, uint amount);
+    event WithdrawalMade(address indexed recipient, uint amount, uint timestamp);
     
     struct Organization {
         address creator;
@@ -68,14 +69,24 @@ contract Donate {
     function trackTokensReceived() public {}
 
     // Withdraw tokens
-    function withdrawTokens() private {}
+    function withdrawTokens(uint organizationIndex) public {
+        require(organizationIndex < organizations.length, "Invalid organization index");
 
+        Organization storage org = organizations[organizationIndex];
+        require(org.creator == msg.sender, "Only the organization creator can withdraw tokens");
+
+        uint amountToWithdraw = org.currentAmount;
+        org.currentAmount = 0;
+
+        payable(org.creator).transfer(amountToWithdraw);
+
+        // Emit an event to indicate Ether has been withdrawn
+        emit WithdrawalMade(org.creator, amountToWithdraw, block.timestamp);}
+        
     // Get all received tokens
     function receivedTokens() public {}
 
     // Get all withdrawn tokens
     function withdrawnTokens() public {}
 
-    // Get donation link
-    function getDonationLink() public {}
 }
