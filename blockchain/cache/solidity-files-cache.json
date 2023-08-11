@@ -70,6 +70,41 @@
       "artifacts": [
         "Lock"
       ]
+    },
+    "/Users/sendsprint/team4-ivy/blockchain/contracts/Donate.sol": {
+      "lastModificationDate": 1691737077898,
+      "contentHash": "c9ba995edca362a2c760d258211c5842",
+      "sourceName": "contracts/Donate.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "Donate"
+      ]
     }
   }
 }
