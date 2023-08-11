@@ -1,15 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-<<<<<<< HEAD
     "/home/ephraim/team-ivy/blockchain/contracts/Donate.sol": {
-      "lastModificationDate": 1691710390071,
-      "contentHash": "c9ba995edca362a2c760d258211c5842",
-=======
-    "/Users/sendsprint/team4-ivy/blockchain/contracts/Donate.sol": {
-      "lastModificationDate": 1691678171440,
-      "contentHash": "2f444859bed69e8a8388af69f748da83",
->>>>>>> 174931b ("dir update")
+      "lastModificationDate": 1691751303641,
+      "contentHash": "11e03cfa23d3ec3428724bf4983d993a",
       "sourceName": "contracts/Donate.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -42,8 +36,8 @@
         "Donate"
       ]
     },
-    "/Users/sendsprint/team4-ivy/blockchain/contracts/Lock.sol": {
-      "lastModificationDate": 1691670866634,
+    "/home/ephraim/team-ivy/blockchain/contracts/Lock.sol": {
+      "lastModificationDate": 1691673917290,
       "contentHash": "4016822f807e1a76c619d67930a7ed45",
       "sourceName": "contracts/Lock.sol",
       "solcConfig": {
