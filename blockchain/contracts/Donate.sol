@@ -73,6 +73,11 @@ contract Donate {
         return organizations;
     }
 
+    // get organization address
+    function getOrganiationsAddress(uint organizationIndex) public view returns(address OrganizationAddress){
+        return organizations[organizationIndex].creator;
+    }
+
     // Send tokens
     function makeDonation(uint organizationIndex) public payable {
         require(msg.value > 0, "Donation amount must be greater than 0");
