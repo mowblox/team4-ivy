@@ -21,20 +21,40 @@ export default function Home() {
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
   const [goalAmount, setGoalAmount] = useState(0);
+  const [isLoading, setLoading] = useState(false)
+   
   useEffect(() => {
     console.log('status:', status)
   }, [status])
   const handleCreateOrg = async (e) => {
     e.preventDefault();
-    const provider = new ethers.BrowserProvider(ethereum);
-    const signer = await provider.getSigner();
-    donateContract.connect(signer).createOrganization(name, about, goalAmount);
+    try{
+
+      const provider = new ethers.BrowserProvider(ethereum);
+      const signer = await provider.getSigner();
+      donateContract.connect(signer).createOrganization(name, about, goalAmount);
+
+    }catch(error){
+      console.log(error)
+
+    }
+
   }
   const handleMakeDon = async (e) => {
+
     e.preventDefault();
-    const provider = new ethers.BrowserProvider(ethereum);
-    const signer = await provider.getSigner();
-    donateContract.connect(signer).makeDonation;
+    try{
+      const provider = new ethers.BrowserProvider(ethereum);
+      const signer = await provider.getSigner();
+      donateContract.connect(signer).makeDonation;
+
+    }catch(error){
+      console.log(error)
+
+      
+
+    }
+
   }
   return (
 
@@ -50,7 +70,7 @@ export default function Home() {
         <input className="border border-black p-1" type="textarea" placeholder="Organisation Description" onChange={(e) => setAbout(e.target.value)} />
         <input className="border border-black p-1" type="number" placeholder="Donation goal" onChange={(e) => setGoalAmount(e.target.value)} />
         <button className="bg-blue color-blue justify-center" onClick={handleCreateOrg}>Save</button>
-        
+        <button className="bg-blue color-blue justify-center" onClick={handleMakeDon}>Donate</button>
       </form>}
 
     </main>
