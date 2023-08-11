@@ -74,7 +74,9 @@ contract Donate {
     }
 
     // get organization address
-    function getOrganiationsAddress(uint organizationIndex) public view returns(address OrganizationAddress){
+    function getOrganiationsAddress(
+        uint organizationIndex
+    ) public view returns (address OrganizationAddress) {
         return organizations[organizationIndex].creator;
     }
 
@@ -166,5 +168,10 @@ contract Donate {
         );
 
         return donationLink;
+    }
+
+    // get user balance
+    function getUserBalance() external view returns (uint) {
+        return msg.sender.balance;
     }
 }
