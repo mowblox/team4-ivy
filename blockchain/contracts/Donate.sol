@@ -80,7 +80,7 @@ contract Donate {
         return organizations[organizationIndex].creator;
     }
 
-    // Send tokens
+    // Make Donation
     function makeDonation(uint organizationIndex) public payable {
         require(msg.value > 0, "Donation amount must be greater than 0");
         require(
