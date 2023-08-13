@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeDon App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="header-container">
+            <div class="btn-hd">
+                <button class="">Create an organiation</button>
+            </div>               
+                <div class="btn-hd">
+                    <button class="">Balance</button>
+                </div>
+        </div>
+    </header>    
+    <main class="container mt-4">
+        <section class="donation-form">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label for="organization" class="form-label">Select an Organization:</label>
+                <select id="organization" name="organization" class="form-select" required>
+                    <option value="">Select an organization</option>
+                    <option value="1">Organization 1</option>
+                    <option value="2">Organization 2</option>
+                    <!-- Add more options for organizations -->
+                </select>
+                <button type="submit" class="btn btn-primary">Donate</button>
+            </form>
+        </section>
+        <section class="organization-list">
+            <h2>Supported Organizations</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Organization 1</li>
+                <li class="list-group-item">Organization 2</li>
+                <!-- List of supported organizations -->
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-secondary text-white text-center py-3">
+        <p>&copy; Group IVY</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

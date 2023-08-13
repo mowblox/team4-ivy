@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url();
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.btn-hd {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    height: 100vh;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 2em;
+}
+
+/* Form styles */
+.donation-form label,
+.donation-form select,
+.donation-form input,
+.donation-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donation-form label {
+    font-weight: bold;
+}
+
+.donation-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.donation-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Organization list styles */
+.organization-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.organization-list li {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    background-color: white;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 1em;
+}
